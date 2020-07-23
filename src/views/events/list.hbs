@@ -1,0 +1,21 @@
+<div class="container p-4">
+  <div class="row">
+    {{#each events}}
+      <div class="col-md-3">
+        <div class="card text-center">
+          <div class="card-body">
+            <h3 class="card-title text-uppercase">{{name_event}}</h3>
+            <p class="m-2">{{place_details}}</p>
+            <p class="m-2">{{dateStart}}</p>
+            <a class="btn btn-danger" href="/events/delete/{{id}}">
+              Delete
+            </a>
+            <a class="btn btn-secondary" href="/events/edit/{{id}}">
+              Edit
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
