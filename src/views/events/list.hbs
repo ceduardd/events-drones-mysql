@@ -6,7 +6,7 @@
           <div class="card-body">
             <h3 class="card-title text-uppercase">{{name_event}}</h3>
             <p class="m-2">{{place_details}}</p>
-            <p class="m-2">{{dateStart}}</p>
+            <p class="m-2">Programdo para: {{formatDate dateStart}}</p>
             <a class="btn btn-danger" href="/events/delete/{{id}}">
               Delete
             </a>
@@ -14,6 +14,13 @@
               Edit
             </a>
           </div>
+        </div>
+      </div>
+    {{else}}
+      <div class="col-md-4 mx-auto">
+        <div class="card card-body text-center">
+          <p>There aren't events created yet.</p>
+          <a href="/events/add">created One!</a>
         </div>
       </div>
     {{/each}}

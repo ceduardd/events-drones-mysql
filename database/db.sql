@@ -23,6 +23,7 @@ CREATE TABLE events(
   id INT(11) NOT NULL,
   name_event VARCHAR(120) NOT NULL,
   create_at timestamp NOT NULL DEFAULT current_timestamp,
+  dateStart DATE;
   place_details TEXT,
   user_id INT(11),
   CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id)
