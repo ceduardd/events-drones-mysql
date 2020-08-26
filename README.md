@@ -1,6 +1,6 @@
-# Dronecontrols - Client
+# DroneControls - Client
 
-Draft University Project 🚧
+Draft University Project 🚧 the name could change
 
 ## Description
 
